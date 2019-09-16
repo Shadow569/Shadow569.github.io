@@ -46,7 +46,8 @@ body{
 }
 
 .activeSide:hover{
-	color:#666666;
+	color:#000000 !important;
+	cursor:context-menu !important;
 }
 
 .content-area{
@@ -76,12 +77,12 @@ body{
 
 .competitions:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .languageSkills:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .basic-info{
@@ -91,7 +92,7 @@ body{
 
 .basic-info:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .competitions{
@@ -112,7 +113,7 @@ body{
 
 .education:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .projects{
@@ -122,7 +123,7 @@ body{
 
 .projects:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .skills{
@@ -132,7 +133,7 @@ body{
 
 .skills:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .contact{
@@ -142,7 +143,7 @@ body{
 
 .contact:hover{
 	cursor:pointer;
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.7);
 }
 
 .block{
