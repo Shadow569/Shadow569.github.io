@@ -617,6 +617,14 @@ body{
 		border-radius:0;
 	}
 	
+	.image_container{
+		height:7em;
+	}
+	
+	.image_container > img{
+		width:30%;
+	}
+	
 	.side-bar{
 		display:none;
 	}
