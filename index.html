@@ -14,13 +14,15 @@
                 var validInput = false;
 				var scroll = $(document).scrollTop();
 				$(".image_container").on("click","img",function(){
-					$(".image-modal").show();
-					$("body").css('overflow','hidden');
-					$(".image_inside").hide();
-					$(".image_inside").css('left','20%');
-					$(".image_inside").css('top',(scroll+50).toString()+'px');
-					$(".image_inside > img").attr('src',$(this).attr('src'));
-					$(".image_inside").fadeIn(2000);
+					if($(window).width() > 1024){
+						$(".image-modal").show();
+						$("body").css('overflow','hidden');
+						$(".image_inside").hide();
+						$(".image_inside").css('left','20%');
+						$(".image_inside").css('top',(scroll+50).toString()+'px');
+						$(".image_inside > img").attr('src',$(this).attr('src'));
+						$(".image_inside").fadeIn(2000);
+					}
 				});
 				$(".image-modal").on("click",function(){
 					$(".image_inside").fadeOut(2000,function(){
@@ -30,8 +32,14 @@
 				});
 				$(window).scrollTop(0);
 				$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
+				if($(window).width() < 1024){
+					$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
+				}
 				$(window).resize(function(){
 					$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
+					if($(window).width() < 1024){
+						$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
+					}
 				});
 				$(document).on('scroll', function() {
 					if($(this).scrollTop()>=($('#basic-info').position().top)){
@@ -113,6 +121,9 @@
 				});
 				$(".github").on("click",function(){
 					window.open("https://www.github.com/Shadow569");
+				});
+				$(".linkedin").on("click",function(){
+					window.open("https://www.linkedin.com/in/kountret-spyrou-mantal-6aa32975/");
 				});
                 $("#fullname").on("keyup",function(){
                     if($("#body_comment").val().length == 0){
@@ -271,6 +282,7 @@
 					<div class='fa fa-facebook fblink'><a href='#'></a></div>
 					<div class='fa fa-instagram instalink'><a href='#'></a></div>
 					<div class='fa fa-github github'><a href='#'></a></div>
+					<div class='fa fa-linkedin linkedin'><a href='#'></a></div>
 				</div>
 			</div>
 			<div class='block' id='education'>
