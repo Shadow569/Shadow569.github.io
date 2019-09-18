@@ -36,7 +36,6 @@ body{
 	position:fixed;
 	height:100%;
 	text-align:center;
-	box-shadow: 0 2px 5px 3px #AAAAAA;
 }
 
 .activeSide{
@@ -276,6 +275,8 @@ body{
 	border-color:#AAAAAA;
 	outline:none;
 }
+
+
 
 #send{
 	margin:3% 2%;
@@ -575,6 +576,18 @@ body{
 }
 
 @media only screen and (max-width:1024px){
+	.instalink{
+	width:100%;
+	border-radius:0;
+	}
+	.fblink{
+	width:100%;
+	border-radius:0;
+	}
+	.github{
+		width:100%;
+		border-radius:0;
+	}
 	.side-bar{
 		display:none;
 	}
