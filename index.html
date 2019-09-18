@@ -15,6 +15,7 @@
 				var scroll = $(document).scrollTop();
 				$(".image_container").on("click","img",function(){
 					if($(window).width() > 1024){
+						$("body").css('height','7600px');
 						$(".image-modal").show();
 						$("body").css('overflow','hidden');
 						$(".image_inside").hide();
@@ -28,6 +29,7 @@
 					$(".image_inside").fadeOut(2000,function(){
 						$(".image-modal").hide();
 						$("body").css('overflow','auto');
+						$("body").css('height','100%');
 					});
 				});
 				$(window).scrollTop(0);
