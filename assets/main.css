@@ -234,7 +234,7 @@ body{
 
 
 .linkedin{
-	background:#00AAAA;
+	background:#006699;
 	padding:2%;
 	border-radius:50%;
 	margin:2% 1%;
@@ -574,7 +574,7 @@ body{
 }
 
 .linkedin:hover{
-	background:#008888;
+	background:#004477;
 	cursor:pointer;
 }
 
