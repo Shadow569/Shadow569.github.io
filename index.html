@@ -36,11 +36,23 @@
 				$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
 				if($(window).width() < 1024){
 					$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
+					$("#basic-info > .profile-image").show();
+					$(".side-bar > .profile-image").hide()
+				}
+				else{
+					$("#basic-info > .profile-image").hide();
+					$(".side-bar > .profile-image").show();
 				}
 				$(window).resize(function(){
 					$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
 					if($(window).width() < 1024){
 						$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
+						$("#basic-info > .profile-image").show();
+						$(".side-bar > .profile-image").hide();
+					}
+					else{
+						$("#basic-info > .profile-image").hide();
+						$(".side-bar > .profile-image").show();
 					}
 				});
 				$(document).on('scroll', function() {
@@ -275,6 +287,7 @@
 		</div>
 		<div class='content-area'>
 			<div class='block' id='basic-info'>
+				<div class='profile-image'><img src="assets/profile.jpg" /></div>
 				<div class='header'>Kountret <b style="color:#000000">Spyrou-Mantal</b></div>
 				<div class='contact-info'>Athens, Greece  ◼  <a href='mailto:countretspirou@gmail.com'>COUNTRETSPIROU@GMAIL.COM</a></div>
 				<div class='birth'>Born in 18 - 11 - 1990</div>
