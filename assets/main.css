@@ -599,24 +599,6 @@ body{
 }
 
 @media only screen and (max-width:1024px){
-	.instalink{
-	width:30%;
-	border-radius:0;
-	}
-	.fblink{
-	width:30%;
-	border-radius:0;
-	}
-	.github{
-		width:30%;
-		border-radius:0;
-	}
-	
-	.linkedin{
-		width:30%;
-		border-radius:0;
-	}
-	
 	.image_container{
 		height:7em;
 	}
@@ -636,6 +618,26 @@ body{
 		margin:0 auto;
 		float:none !important;
 	}
+	
+	.social-media-links{
+		margin:1% auto;
+		text-align:center;
+		margin-top:10%;
+		width:100%;
+	}
+	
+	.social-media-links > div{
+		width:40%;
+		border-radius:0;
+	}
+	
+	.profile-image{
+		width:30%;
+		padding:0;
+		margin:2% auto;
+		margin-bottom:10%;
+	}
+	
 	body{
 		height:90%;
 	}
