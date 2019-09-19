@@ -34,7 +34,7 @@
 				});
 				$(window).scrollTop(0);
 				$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
-				if($(window).width() < 1024){
+				if(window.innerWidth <= 1024){
 					$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
 					$("#basic-info > .profile-image").show();
 					$(".side-bar > .profile-image").hide()
@@ -45,7 +45,7 @@
 				}
 				$(window).resize(function(){
 					$("body").css('font-size',(($(window).width())*0.015).toString()+'px');
-					if($(window).width() < 1024){
+					if(window.innerWidth <= 1024){
 						$("body").css('font-size',(($(window).width())*0.01992).toString()+'px');
 						$("#basic-info > .profile-image").show();
 						$(".side-bar > .profile-image").hide();

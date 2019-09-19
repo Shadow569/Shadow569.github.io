@@ -636,7 +636,9 @@ body{
 		padding:0;
 		margin:2% auto;
 		margin-bottom:10%;
+		z-index:2;
 	}
+	
 	
 	body{
 		height:90%;
