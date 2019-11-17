@@ -1,5 +1,5 @@
 body{
-	background:#FFFFFF;
+	background:#EEEEEE;
 	font-size:23px;
 	font-family:Helvetica;
 	width:100%;
@@ -21,6 +21,11 @@ body{
 	z-index:100;
 }
 
+.content_info{
+	display: inline-block;
+    width: 70%;
+}
+
 .image_inside > img{
 	width:100%;
 	height:100%;
@@ -30,22 +35,18 @@ body{
 	background:#000000;
 	color:rgba(255,255,255,0.5);
 	font-size:100%;
-	padding:0;
+	padding:1%;
 	margin:0;
 	width:15%;
 	position:fixed;
-	height:100%;
-	text-align:center;
 	overflow:hidden;
+	display:none;
 }
 
 .activeSide{
 	color:#000000;
 	background:#FFFFFF;
 	padding:1%;
-	margin-left:2% !important;
-	border-radius:1rem 0 0 1rem;
-	box-shadow:0 0.1rem 0.4rem 0.05rem #AAAAAA;
 }
 
 .activeSide:hover{
@@ -53,29 +54,45 @@ body{
 	cursor:context-menu !important;
 }
 
+
+#basic-info{
+	width: 100% !important;
+    font-size: 120% !important;
+	height: 20em !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding:0;
+    overflow: hidden;
+}
+
 .content-area{
-	width:80%;
-	padding:1%;
 	display:block;
-	float:right;
-	height:100%;
 	color:#AAAAAA;
+	text-align: center;
+    height: 20em;
+    margin: 0;
+    width: 100%;
 }
 
 .profile-image{
-	padding:4%;
-	border-radius:5%;
-	background:rgba(255,255,255,0.3);
-	margin:1% auto;
-	width:60%;
-	height:auto;
-	margin-top:50%;
+	background:#AAA;
+	width:27%;
+	height:100%;
+	display: inline-block;
+    padding-top: 2%;
+    border-right: 1px solid rgb(170, 170, 170);
+    border-radius: 0px;
+    padding-right: 2%;
+    background: rgb(170, 170, 170);
+    padding-left: 0.4%;
 }
 
 .profile-image > img{
-	border-radius:5%;
-	width:100%;
-	height:auto;
+	width: 80%;
+    height: auto;
+    margin-top: 15%;
 }
 
 .competitions:hover{
@@ -89,8 +106,11 @@ body{
 }
 
 .basic-info{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .basic-info:hover{
@@ -99,18 +119,27 @@ body{
 }
 
 .competitions{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .languageSkills{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .education{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 
@@ -120,8 +149,11 @@ body{
 }
 
 .projects{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .projects:hover{
@@ -130,8 +162,11 @@ body{
 }
 
 .skills{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .skills:hover{
@@ -140,8 +175,11 @@ body{
 }
 
 .contact{
-	position:relative;
-	margin:10% auto;
+	width: 100%;
+    font-size: 120%;
+    text-align: center;
+    position:relative;
+	margin:2% auto;
 }
 
 .contact:hover{
@@ -150,10 +188,17 @@ body{
 }
 
 .block{
-	width:100%;
-	font-size:140%;
-	margin-top:10%;
-	padding-top:10%;
+	width: 44%;
+    font-size: 80%;
+	display: inline-block;
+    vertical-align: text-top;
+    background: #FFF;
+	padding: 1%;
+	text-align: left;
+    height: 50em;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem #AAA;
+    margin: 1%;
 }
 
 .image-modal{
@@ -250,21 +295,12 @@ body{
 }
 
 #education{
-	border-top:1px dashed #AAAAAA;
-	margin-top:20%;
-	margin-bottom:20%;
 }
 
 #skills{
-	border-top:1px dashed #AAAAAA;
-	margin-top:20%;
-	margin-bottom:10%;
 }
 
 #contact{
-	border-top:1px dashed #AAAAAA;
-	margin-top:20%;
-	margin-bottom:20%;
 }
 
 .input-container{
@@ -396,9 +432,6 @@ body{
 }
 
 #projects{
-	border-top:1px dashed #AAAAAA;
-	margin-top:20%;
-	margin-bottom:10%;
 }
 
 .image_container{
@@ -420,15 +453,9 @@ body{
 }
 
 #competitions{
-	margin-top:20%;
-	margin-bottom:10%;
-	border-top:1px dashed #AAAAAA;
 }
 
 #languageSkills{
-	margin-top:20%;
-	margin-bottom:10%;
-	border-top:1px dashed #AAAAAA;
 }
 
 
@@ -602,19 +629,24 @@ body{
 	text-align:center;
 }
 
-@media only screen and (min-width:1024px) and (max-width:1366px){
-	.side-bar{
-		width:20%;
-	}
-	.content-area{
-		width:75%;
-	}
-
-}
-
 @media only screen and (max-width:1024px){
 	.image_container{
 		height:7em;
+	}
+
+	.hamburger{
+		text-align:center;
+		font-size:140%;
+		background:#CCCCCC;
+		padding:1%;
+		color:#FFFFFF;
+		border-radius:0.2rem;
+		display:inline;
+		cursor:pointer;
+	}
+
+	.content_info{
+		width:100%;
 	}
 	
 	.image_container > img{
@@ -622,15 +654,34 @@ body{
 	}
 	
 	.side-bar{
-		display:none;
+		display:block;
+		width:100%;
+		height:auto;
+		z-index: 10;
+		box-shadow: 0 0.2rem 0.5rem 0.05rem #AAA;
 	}
-	.side-bar > div{
+	.side-bar > .sub{
 		display:none;
 	}
 	.content-area{
 		width:100%;
 		margin:0 auto;
 		float:none !important;
+	}
+
+	.block{
+		width:100%;
+		margin:0;
+		display:block;
+		font-size:100%;
+		height:initial;
+		border-raidus:0;
+		box-shadow: none;
+	}
+
+	#basic-info{
+		height:initial !important;
+		padding-top:20%;
 	}
 	
 	.social-media-links{
@@ -646,12 +697,15 @@ body{
 	}
 	
 	.profile-image{
-		width:30%;
+		width:27%;
 		padding:0;
-		margin:2% auto;
 		margin-bottom:10%;
 		box-shadow:inset 0 0 0 0.8rem rgba(255,255,255,0.7);
 		position:relative;
+		z-index: 1;
+		vertical-align: middle;
+		background:#FFF;
+		border-right:none;
 	}
 	
 	.profile-image > img{
