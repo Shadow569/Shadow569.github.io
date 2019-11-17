@@ -677,7 +677,7 @@ body{
 		height:initial;
 		border-radius:0 !important;
 		box-shadow: none !important;
-		margin-bottom:4%;
+		padding-bottom:4%;
 	}
 
 	#basic-info{
