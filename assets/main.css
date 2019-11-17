@@ -677,13 +677,14 @@ body{
 		height:initial;
 		border-radius:0 !important;
 		box-shadow: none !important;
-		padding-bottom:4% !important;
+		padding-bottom:4%;
 	}
 
 	#basic-info{
 		height:initial !important;
 		padding: 1%;
 		padding-top:20%;
+		padding-bottom: 4%;
 		width:100%;
 	}
 	
