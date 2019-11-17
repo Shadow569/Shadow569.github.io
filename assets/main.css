@@ -8,6 +8,7 @@ body{
 	position:relative;
 	z-index:0;
 	height:100%;
+	padding-bottom:5%;
 }
 
 .image_inside{
@@ -720,5 +721,6 @@ body{
 	
 	body{
 		height:90%;
+		padding-bottom: 0;
 	}
 }
